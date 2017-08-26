@@ -1,0 +1,11 @@
+c:\users\robinder\documents\visual studio 2017\Projects\ObjN64Convert\ObjN64Convert\bin\Debug\ObjN64Convert.exe.config
+c:\users\robinder\documents\visual studio 2017\Projects\ObjN64Convert\ObjN64Convert\bin\Debug\ObjN64Convert.exe
+c:\users\robinder\documents\visual studio 2017\Projects\ObjN64Convert\ObjN64Convert\bin\Debug\ObjN64Convert.pdb
+c:\users\robinder\documents\visual studio 2017\Projects\ObjN64Convert\ObjN64Convert\obj\Debug\ObjN64Convert.csprojResolveAssemblyReference.cache
+c:\users\robinder\documents\visual studio 2017\Projects\ObjN64Convert\ObjN64Convert\obj\Debug\ObjN64Convert.Form1.resources
+c:\users\robinder\documents\visual studio 2017\Projects\ObjN64Convert\ObjN64Convert\obj\Debug\ObjN64Convert.Properties.Resources.resources
+c:\users\robinder\documents\visual studio 2017\Projects\ObjN64Convert\ObjN64Convert\obj\Debug\ObjN64Convert.csproj.GenerateResource.Cache
+c:\users\robinder\documents\visual studio 2017\Projects\ObjN64Convert\ObjN64Convert\obj\Debug\ObjN64Convert.exe
+c:\users\robinder\documents\visual studio 2017\Projects\ObjN64Convert\ObjN64Convert\obj\Debug\ObjN64Convert.pdb
+c:\users\robinder\documents\visual studio 2017\Projects\ObjN64Convert\ObjN64Convert\obj\Debug\ObjN64Convert.Form2.resources
+c:\users\robinder\documents\visual studio 2017\Projects\ObjN64Convert\ObjN64Convert\obj\Debug\ObjN64Convert.Form3.resources
