@@ -49,7 +49,7 @@ namespace ObjN64Convert
             }
             if (!File.Exists(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "/source.h"))
             {
-                using (var ppath1 = File.Create(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "/source.c"))
+                using (var ppath1 = File.Create(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "/source.h"))
                 {
 
                 }
