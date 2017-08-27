@@ -4,11 +4,9 @@
 
 A simple tool to convert OBJ files to N64 compatible F3DEX2 C source code.
 
-Please note: 
-
 ## Please note:
 
-### This tool is very early in developement. Up to now it only supports OBJ files, and it only supports them with smooth shading. They must also be triangulated.
+#### This tool is very early in developement. Up to now it only supports OBJ files, and it only supports them with smooth shading. They must also be triangulated.
 
 # Changelog
 
