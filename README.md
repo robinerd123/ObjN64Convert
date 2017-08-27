@@ -30,8 +30,7 @@ Please note:
 ### Pros.
 
 * First release. 
-* This program is not currently finished and in it's current state can only convert models with maximum 32 verticles.
 
 ### Cons.
 
-* Pretty much nothing works
+* Pretty much nothing works and can only convert models with maximum 32 verticles.
