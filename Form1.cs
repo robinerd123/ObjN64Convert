@@ -35,25 +35,9 @@ namespace ObjN64Convert
             this.Close();
             
         }
-        string vpath;
-        string fpath;
         private void Form1_Load(object sender, EventArgs e)
         {
             
-            if (!File.Exists(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "/source.c"))
-            {
-                using (var ppath1 = File.Create(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "/source.c"))
-                {
-
-                }
-            }
-            if (!File.Exists(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "/source.h"))
-            {
-                using (var ppath1 = File.Create(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "/source.h"))
-                {
-
-                }
-            }
         }
     }
 }

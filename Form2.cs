@@ -56,7 +56,7 @@ namespace ObjN64Convert
             string b1;
             string b2;
             string b3;
-            string result = "Vtx " + prompt1 + "__v[] = {";
+            string result = "#include <nusys.h>\r\n#include \"graphic.h\"\r\nVtx " + prompt1 + "__v[] = {";
             int a1;
             int a2;
             int a3;
@@ -158,9 +158,9 @@ namespace ObjN64Convert
 
             }
             result = result + "\r\n};";
-            System.IO.File.WriteAllText(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "/source.h", result);
-            System.Diagnostics.Process.Start("notepad.exe", System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "/source.h");
-            result = "";
+            System.IO.File.WriteAllText(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "/" + prompt1 + "_.h", result);
+            System.Diagnostics.Process.Start("notepad.exe", System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "/" + prompt1 + "_.h");
+            result = "#include \"" + prompt1 + "_.h\"\r\nGfx " + prompt1 + "__dl[] = {\r\ngsDPPipeSync(),\r\ngsDPSetCycleType(G_CYC_1CYCLE),\r\ngsDPSetRenderMode(G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2),\r\ngsSPClearGeometryMode((G_SHADE | G_SHADING_SMOOTH | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_CULL_BOTH | G_FOG)),\r\ngsSPSetGeometryMode(G_ZBUFFER | G_CULL_BACK | G_SHADE | G_SHADING_SMOOTH | G_LIGHTING),\r\ngsDPSetColorDither(G_CD_BAYER),\r\ngsDPSetCombineMode(G_CC_MULPRIMSHADE, G_CC_MULPRIMSHADE),";
             int b = 0;
             int bv = 32;
             foreach (string line in lines)
@@ -183,18 +183,17 @@ namespace ObjN64Convert
                     c3 = c3.Split('/')[0];
                     a3 = int.Parse(c3) - 1;
                     c3 = a3.ToString();
-                    string vline = "gsSP1Triangle(" + c1 + "," + c2 + "," + c3 + ",0),";
-                        result = result + "\r\n" + vline;
-                    b++;
-
+                    string vline = "gsSPVertex(&" + prompt1 + "__v[" + c1 + "], 1,0),\r\ngsSPVertex(&" + prompt1 + "__v[" + c2 + "], 1, 1),\r\ngsSPVertex(&" + prompt1 + "__v[" + c3 + "], 1, 2),\r\ngsSP1Triangle(0, 1, 2, 0),";
+                    result = result + "\r\n" + vline;
+                    
                 }
 
 
 
             }
-            result = result + "\r\n";
-            System.IO.File.WriteAllText(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "/source.c", result);
-            System.Diagnostics.Process.Start("notepad.exe", System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "/source.c");
+            result = result + "\r\ngsSPEndDisplayList(),\r\n};";
+            System.IO.File.WriteAllText(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "/" + prompt1 + "_.c", result);
+            System.Diagnostics.Process.Start("notepad.exe", System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "/" + prompt1 + "_.c");
             System.Diagnostics.Process.GetCurrentProcess().Kill();
 
         }
@@ -352,7 +351,7 @@ namespace ObjN64Convert
                     c3 = c3.Split('/')[0];
                     a3 = int.Parse(c3) - 1;
                     c3 = a3.ToString();
-                    string vline = "gsSP1Triangle(" + c1 + "," + c2 + "," + c3 + ",0),";
+                    string vline = "fail";
                     result = result + "\r\n" + vline;
                     b++;
 
