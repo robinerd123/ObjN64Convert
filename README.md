@@ -17,6 +17,7 @@ A simple tool to convert OBJ files to N64 compatible F3DEX2 C source code.
 * Major update
 * Can now process infinite verticles
 * Added custom name declaration
+* Now makes full C and H files
 
 ### Cons.
 
