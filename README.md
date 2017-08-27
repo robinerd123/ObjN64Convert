@@ -1,4 +1,4 @@
-# 3dN64Convert
+# ObjN64Convert
 
 * https://github.com/robinerd123/ObjN64Convert/blob/master/bin/Debug/ObjN64Convert.exe?raw=true
 
